@@ -1,0 +1,29 @@
+{
+  "name": "hmmstart",
+  "version": "0.1.0",
+  "private": true,
+  "author": "",
+  "description": "An example CRUD app with user authentication.",
+  "license": "ISC",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "backend": "cd backend && npm run dev",
+    "backend:install": "cd backend && npm install",
+    "frontend": "cd frontend && npm run dev",
+    "frontend:install": "cd frontend && npm install",
+    "now-dev": "now dev -p 8008",
+    "app": "concurrently -c red,green --kill-others-on-fail \"npm run backend\" \"npm run frontend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmmChase/hmmStart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hmmChase/hmmStart/issues"
+  },
+  "homepage": "https://github.com/hmmChase/hmmStart#readme",
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  }
+}
